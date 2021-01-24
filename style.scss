@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.create-user , .user-info{
+    grid-column: 1;
+}
+h3{
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center;
+}
+.reg-form{
+    padding: 15px;
+    
+    &__item{
+        margin-bottom: 10px;
+        >label{
+            display:block;
+            width: 75px;
+            font-weight: 700;
+            
+        }
+        >p{
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        &__lodging-type{
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+    }
+    &__button{
+        color: #000;
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid black;
+        outline: none;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .error{
+      display:block;
+        color: rgb(211, 24, 24);
+        
+    }
+}
+
+.user-profile{
+    margin: 15px;
+    padding: 10px;
+    border: 1px solid #000000;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+
+    &__name, &__email, &__lodging{
+        font-weight: 700;
+    }
+
+    &__name-value, &__email-value, &__lodgings-values{
+        margin-left: 10px;
+    } 
+}
+#error-checkbox{
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 767px) {
+    body{
+        grid-template-columns: 1fr 1fr;
+    }
+    .reg-form{
+        width: 90%;
+        margin: 20px auto;
+        &__item{
+            >input{
+                width: 55%;
+            }
+            >label{
+                display: inline-block;
+                width:122px;
+                text-align: end;
+            }
+        }
+        &__button{
+            width: 65%;
+            margin-left: 50px;
+        }
+    }
+    .error{
+        margin-left: 125px;
+    }
+    .user-profile{
+        width: 50%;
+        margin: 20px 0;
+    }
+    .create-user{
+        grid-column: 1/ span 1;
+    }
+    .user-info{
+        grid-column: 2/ span 1;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .reg-form{
+        width: 80%;
+        margin: 20px auto;
+        &__item{
+            >input{
+                width: 66%;
+            }
+        }
+
+        &__button{
+            width: 80%;
+            margin-left: 50px;
+        }
+    }
+    .user-profile{
+        width: 50%;
+        margin: 20px auto;
+    }
+    
+}

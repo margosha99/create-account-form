@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" /> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">    <title>Create a Customer page</title>
+</head>
+<body>
+    <section class="create-user">
+        <h3>Create An Account</h3>
+        <form action="" class="reg-form" onsubmit="createAccount(event)">
+            <div class="reg-form__item">
+                <label for="username">Username</label>
+                <input type="text" id="username" > 
+                <small class="error"></small>                   
+            </div>
+
+            <div class="reg-form__item">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="repass">Password(confirm)</label>
+                <input type="password" id="repass">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+                <small class="error"></small> 
+            </div>
+
+            <div class="reg-form__item">
+                <p for="">Preferred Lodgings </p>
+                <small class="error" id="error-checkbox"></small> 
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging1" name="lodging" value="Fire Cabins">
+                    <label for="lodging1">Fire Cabins</label>    
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging2" name="lodging" value="Horseshoe Cabins">
+                    <label for="lodging2">Horseshoe Cabins</label>
+                </div>
+                
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging3" name="lodging" value="Spruce Cabins">
+                    <label for="lodging3">Spruce Cabins</label>
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging4" name="lodging" value="Ursa Major Cabins">
+                    <label for="lodging4">Ursa Major Cabins</label>
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging5" name="lodging" value="Bear Meadow Campground">
+                    <label for="lodging5">Bear Meadow Campground</label>
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging6" name="lodging" value="Lakeside Campground">
+                    <label for="lodging6">Lakeside Campground</label>
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging7" name="lodging" value="Leadfoot Campground">
+                    <label for="lodging7">Leadfoot Campground</label>
+                </div>
+
+                <div class="reg-form__item__lodging-type">
+                    <input type="checkbox" id="lodging8" name="lodging" value="Talus Campground">
+                    <label for="lodging8">Talus Campground</label>
+                </div>
+            </div>
+            <button class="reg-form__button">Create Account</button>
+        </form>
+    </section>
+
+    <section class="user-info">
+        <div class="user-profile">
+            <h3>Profile</h3>
+
+        </div>
+    </section>    
+    <script src="script.js"></script>
+</body>
+</html>
